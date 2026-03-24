@@ -41,7 +41,7 @@
 
                 <div class="contact-layout">
                     <!-- Contact form for learning and layout practice -->
-                    <form class="contact-form card reveal" action="#" method="post">
+                    <form class="contact-form card reveal" id="contactForm">
                         <label for="name">Name</label>
                         <input id="name" name="name" type="text" placeholder="Your name" required>
 
@@ -60,6 +60,7 @@
                         <textarea id="message" name="message" rows="5" placeholder="Write your question here..." required></textarea>
 
                         <button class="btn btn-primary" type="submit">Send Message</button>
+                        <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
                     </form>
 
                     <aside class="contact-aside reveal">

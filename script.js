@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setupMobileMenu();
     setFooterYear();
     setupRevealAnimation();
+    setupContactForm();
 });
 
 /**
@@ -74,4 +75,28 @@ function setupRevealAnimation() {
     );
 
     items.forEach((item) => observer.observe(item));
+}
+
+/**
+ * Handle contact form submission for static hosting.
+ * Prevents 405 errors by avoiding direct POST requests.
+ */
+function setupContactForm() {
+    const form = document.getElementById("contactForm");
+    const feedback = document.getElementById("formFeedback");
+    if (!form || !feedback) return;
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        if (!form.checkValidity()) {
+            feedback.textContent = "Please complete all required fields correctly.";
+            feedback.classList.add("is-error");
+            return;
+        }
+
+        feedback.textContent = "Thanks! Your message has been recorded locally (demo mode).";
+        feedback.classList.remove("is-error");
+        form.reset();
+    });
 }

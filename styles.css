@@ -294,6 +294,17 @@ h1 {
     align-content: start;
 }
 
+.form-feedback {
+    min-height: 1.2em;
+    font-size: 0.92rem;
+    color: #7ff0b2;
+    margin-top: 0.2rem;
+}
+
+.form-feedback.is-error {
+    color: #ff9ca8;
+}
+
 /* Decorative visuals */
 .bg-orb {
     position: absolute;
