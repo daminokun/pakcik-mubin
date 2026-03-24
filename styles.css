@@ -25,6 +25,20 @@ body {
     color: var(--text);
     background: radial-gradient(circle at top right, #1a2a47 0%, var(--bg) 45%);
     line-height: 1.6;
+    position: relative;
+}
+
+/* Subtle grid overlay for a technical look */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: -2;
 }
 
 a {
@@ -142,6 +156,10 @@ h1 {
     font-size: clamp(1.9rem, 5vw, 3.2rem);
     line-height: 1.15;
     margin-bottom: 1rem;
+    background: linear-gradient(135deg, #e8eeff 0%, #8cb9ff 55%, #9d8dff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .lead {
@@ -186,6 +204,7 @@ h1 {
 
 .section {
     padding: 4.25rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .page-main {
@@ -218,6 +237,14 @@ h1 {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 1.1rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover,
+.visual-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(124, 172, 255, 0.6);
+    box-shadow: 0 0 20px rgba(94, 160, 255, 0.3);
 }
 
 .card h3,
@@ -238,6 +265,13 @@ h1 {
 
 .metric-list li + li {
     margin-top: 0.4rem;
+}
+
+.hero-gpu-art {
+    width: 100%;
+    border-radius: 12px;
+    margin: 0.5rem 0 0.9rem;
+    background: rgba(12, 20, 35, 0.8);
 }
 
 .architecture-panel {
@@ -303,6 +337,32 @@ h1 {
 
 .form-feedback.is-error {
     color: #ff9ca8;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.data-bar {
+    width: 100%;
+    height: 12px;
+    margin: 0.7rem 0 0.85rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.data-bar span {
+    display: block;
+    width: var(--w);
+    height: 100%;
+    background: linear-gradient(90deg, #5ea0ff, #8b7cff);
+}
+
+.featured-gpu {
+    margin-top: 1rem;
 }
 
 /* Decorative visuals */
@@ -403,6 +463,10 @@ h1 {
     .contact-layout {
         grid-template-columns: 1fr;
     }
+
+    .data-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 700px) {
@@ -431,6 +495,10 @@ h1 {
         grid-template-columns: 1fr;
     }
 
+    .data-grid {
+        grid-template-columns: 1fr;
+    }
+
     .brand-text {
         font-size: 0.82rem;
     }
@@ -438,5 +506,5 @@ h1 {
 
 @keyframes floatY {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
+    50% { transform: translateY(-15px); }
 }
