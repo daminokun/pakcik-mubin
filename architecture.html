@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the key building blocks of GPU architecture.">
+    <title>GPU Guide | Architecture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="architecture">
+    <!-- Shared site header and navigation -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="index.html" aria-label="Go to home page">
+                <span class="brand-mark">GPU</span>
+                <span class="brand-text">Graphics Processing Unit</span>
+            </a>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="siteNav">
+                <a href="index.html" data-nav="home">Home</a>
+                <a href="architecture.html" data-nav="architecture">Architecture</a>
+                <a href="applications.html" data-nav="applications">Applications</a>
+                <a href="contact.html" data-nav="contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Page 2</p>
+                    <h1>GPU Architecture</h1>
+                    <p>Core components that help GPUs execute parallel tasks efficiently.</p>
+                </div>
+
+                <!-- Architecture cards -->
+                <div class="card-grid">
+                    <article class="card reveal">
+                        <h3>Streaming Multiprocessors</h3>
+                        <p>Clusters of cores execute many threads in parallel and schedule work dynamically.</p>
+                    </article>
+                    <article class="card reveal">
+                        <h3>Memory Hierarchy</h3>
+                        <p>Registers, shared memory, cache, and VRAM balance speed and capacity for performance.</p>
+                    </article>
+                    <article class="card reveal">
+                        <h3>Compute Pipelines</h3>
+                        <p>Dedicated units for geometry, rasterization, shading, and modern ray tracing workloads.</p>
+                    </article>
+                </div>
+
+                <!-- Visual timeline-style block -->
+                <div class="visual-card reveal architecture-panel">
+                    <h2>Execution Flow (Simplified)</h2>
+                    <ol>
+                        <li>Task enters command queue.</li>
+                        <li>Scheduler assigns work to multiprocessors.</li>
+                        <li>Thousands of cores process data in parallel.</li>
+                        <li>Results are written to memory or display output.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <div>
+                <h3>GPU Guide</h3>
+                <p>Simple, modern learning pages for understanding GPU fundamentals.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="architecture.html">Architecture</a>
+                <a href="applications.html">Applications</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">© <span id="currentYear"></span> GPU Guide</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
