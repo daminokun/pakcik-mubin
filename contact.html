@@ -34,7 +34,6 @@
         <section class="section">
             <div class="container">
                 <div class="section-head">
-                    <p class="eyebrow">Page 4</p>
                     <h1>Contact</h1>
                     <p>Share your questions about GPU basics, architecture, or practical applications.</p>
                 </div>
@@ -80,8 +79,55 @@
                 </div>
             </div>
         </section>
-    </main>
+  
+		<section class="section reveal">
+			<div class="container">
+				<div class="section-head">
+					<p class="eyebrow">Support</p>
+					<h2>Frequently Asked Questions</h2>
+				</div>
+				
+				<div class="faq-list">
+					<div class="faq-item">
+						<h4>Why are GPUs better for AI than CPUs?</h4>
+						<p>AI models require billions of simple math calculations at once. A CPU handles tasks one by one, while a GPU handles thousands simultaneously.</p>
+					</div>
+					<div class="faq-item">
+						<h4>What does 'Parallel Processing' actually mean?</h4>
+						<p>It's like a supermarket with 100 cashiers open instead of just 1. Everyone gets checked out at the same time.</p>
+					</div>
+					<div class="faq-item">
+						<h4>What is the difference between a Core and a Thread?</h4>
+						<p>A core is the physical hardware, while a thread is a virtual sequence of instructions the core handles.</p>
+					</div>
+					<div class="faq-item">
+						<h4>Do all GPUs support Ray Tracing?</h4>
+						<p>No, only modern architectures with dedicated RT (Ray Tracing) cores can handle these calculations in real-time.</p>
+					</div>
+					<div class="faq-item">
+						<h4>What is VRAM and why does it matter?</h4>
+						<p>VRAM (Video RAM) is high-speed memory dedicated to the GPU. It stores the textures, models, and frame buffers so the GPU doesn't have to wait for the slower system RAM to send data.</p>
+					</div>
 
+					<div class="faq-item">
+						<h4>What are Tensor Cores?</h4>
+						<p>Tensor Cores are specialized hardware found in modern GPUs (like the RTX series) specifically designed to accelerate Deep Learning and AI math. They are the reason tools like ChatGPT and image generators run so fast.</p>
+					</div>
+
+					<div class="faq-item">
+						<h4>Does a GPU replace a CPU?</h4>
+						<p>No. A CPU is the "Manager" that handles logic and OS tasks. The GPU is the "Worker" that handles massive mathematical workloads. They work together to make a computer functional.</p>
+					</div>
+
+					<div class="faq-item">
+						<h4>What is Ray Tracing?</h4>
+						<p>Ray Tracing is a rendering technique that simulates the physical behavior of light. It calculates how light bounces, reflects, and creates shadows in real-time, which used to be impossible before modern GPU hardware.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+</main>
+	
     <footer class="site-footer">
         <div class="container footer-wrap">
             <div>
