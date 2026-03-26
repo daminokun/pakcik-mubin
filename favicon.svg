@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- background -->
+  <rect width="512" height="512" rx="96" fill="#0F172A"/>
+
+  <!-- songkok (top hat) -->
+  <path d="M156 190
+           C182 140, 230 120, 256 120
+           C282 120, 330 140, 356 190
+           L336 360
+           C332 392, 300 420, 256 420
+           C212 420, 180 392, 176 360
+           Z"
+        fill="#F8FAFC" opacity="0.95"/>
+
+  <!-- subtle brim line -->
+  <path d="M176 360 C210 380, 302 380, 336 360"
+        stroke="#0F172A" stroke-width="18" opacity="0.18"/>
+
+  <!-- glasses + moustache cut-out (uses background color to "carve" into the hat) -->
+  <g fill="none" stroke="#0F172A" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <!-- glasses frames -->
+    <rect x="132" y="185" width="120" height="92" rx="28"/>
+    <rect x="260" y="185" width="120" height="92" rx="28"/>
+  </g>
+
+  <!-- moustache cut-out -->
+  <path d="M176 315
+           C206 290, 232 290, 256 315
+           C280 290, 306 290, 336 315
+           C308 350, 279 352, 256 334
+           C233 352, 204 350, 176 315Z"
+        fill="#0F172A" opacity="0.95"/>
+</svg>
