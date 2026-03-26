@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A clean introduction to Graphics Processing Units (GPUs).">
-    <title>GPU Guide | Home</title>
+    <!-- Title dekat tab -->
+	<title>GPU Guide | Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="home">
-    <!-- Shared site header and navigation -->
+    <!-- Site Header dgn Nav Bar -->
     <header class="site-header">
         <div class="container nav-wrap">
             <a class="brand" href="index.html" aria-label="Go to home page">
@@ -20,7 +21,8 @@
             </a>
 
             <button class="menu-btn" id="menuBtn" aria-label="Toggle mobile menu" aria-expanded="false">
-                <span></span><span></span><span></span>
+				<!-- hamburger icon -->
+               <span></span><span></span><span></span>
             </button>
 
             <nav class="site-nav" id="siteNav">
@@ -33,7 +35,7 @@
     </header>
 
     <main>
-        <!-- Hero section for the home page -->
+        <!-- Hero(main) section for the home page -->
         <section class="hero">
             <div class="container hero-grid">
                 <div>
@@ -52,22 +54,8 @@
                 <!-- Visual block with inline GPU illustration -->
                 <div class="visual-card floating">
                     <h2>GPU Snapshot</h2>
-                    <svg class="hero-gpu-art" viewBox="0 0 520 280" aria-label="GPU chip illustration">
-                        <rect x="40" y="58" width="440" height="164" rx="18" fill="#101a2b" stroke="#4f84d6" stroke-width="2"></rect>
-                        <rect x="182" y="88" width="156" height="104" rx="14" fill="#1f3150" stroke="#7db4ff" stroke-width="2"></rect>
-                        <rect x="210" y="111" width="100" height="58" rx="8" fill="#0b1220" stroke="#8b7cff" stroke-width="2"></rect>
-                        <line x1="16" y1="90" x2="40" y2="90" stroke="#8ea7d8" stroke-width="4"></line>
-                        <line x1="16" y1="125" x2="40" y2="125" stroke="#8ea7d8" stroke-width="4"></line>
-                        <line x1="16" y1="160" x2="40" y2="160" stroke="#8ea7d8" stroke-width="4"></line>
-                        <line x1="16" y1="195" x2="40" y2="195" stroke="#8ea7d8" stroke-width="4"></line>
-                        <line x1="480" y1="90" x2="504" y2="90" stroke="#8ea7d8" stroke-width="4"></line>
-                        <line x1="480" y1="125" x2="504" y2="125" stroke="#8ea7d8" stroke-width="4"></line>
-                        <line x1="480" y1="160" x2="504" y2="160" stroke="#8ea7d8" stroke-width="4"></line>
-                        <line x1="480" y1="195" x2="504" y2="195" stroke="#8ea7d8" stroke-width="4"></line>
-                        <rect x="66" y="238" width="90" height="10" rx="5" fill="#2a3956"></rect>
-                        <rect x="172" y="238" width="180" height="10" rx="5" fill="#3a5c90"></rect>
-                        <rect x="366" y="238" width="88" height="10" rx="5" fill="#2a3956"></rect>
-                    </svg>
+                   
+					<img src="9126701.png" alt="gpu image" class="hero-gpu-art">
                     <ul class="metric-list">
                         <li><strong>10,000+</strong> parallel cores</li>
                         <li><strong>High bandwidth</strong> dedicated VRAM</li>
