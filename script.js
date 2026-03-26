@@ -61,7 +61,9 @@ function setupRevealAnimation() {
         items.forEach((item) => item.classList.add("show"));
         return;
     }
-
+/**
+ *scroll baru keluar element
+ */
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
