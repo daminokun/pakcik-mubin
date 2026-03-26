@@ -34,7 +34,6 @@
         <section class="section">
             <div class="container">
                 <div class="section-head">
-                    <p class="eyebrow">Page 2</p>
                     <h1>GPU Architecture</h1>
                     <p>Core components that help GPUs execute parallel tasks efficiently.</p>
                 </div>
@@ -65,7 +64,69 @@
                         <li>Results are written to memory or display output.</li>
                     </ol>
                 </div>
-            </div>
+				<div class="comparison-section reveal">
+						<h2>CPU vs. GPU Architecture</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Feature</th>
+									<th>Central Processing Unit (CPU)</th>
+									<th>Graphics Processing Unit (GPU)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>Core Count</strong></td>
+									<td>Few (8–24 powerful cores)</td>
+									<td>Thousands (10,000+ small cores)</td>
+								</tr>
+								<tr>
+									<td><strong>Optimization</strong></td>
+									<td>Serial Processing (one by one)</td>
+									<td>Parallel Processing (all at once)</td>
+								</tr>
+								<tr>
+									<td><strong>Latency</strong></td>
+									<td>Low (fast individual tasks)</td>
+									<td>High (high throughput for big data)</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				<div class="visual-card reveal featured-gpu">
+					<div class="section-head">
+						<p class="eyebrow">Data Bottlenecks</p>
+						<h2>Memory Hierarchy: Speed vs. Size</h2>
+						<p>Performance relies on moving data quickly between these layers.</p>
+					</div>
+					
+					<div class="memory-viz">
+						<div class="data-item">
+							<div class="label-group">
+								<span><strong>Registers</strong> (Internal Core Memory)</span>
+								<span class="muted">Fastest / Smallest</span>
+							</div>
+							<div class="data-bar"><span style="--w: 15%"></span></div>
+						</div>
+
+						<div class="data-item">
+							<div class="label-group">
+								<span><strong>L2 Cache / Shared Memory</strong></span>
+								<span class="muted">High Speed / Medium Size</span>
+							</div>
+							<div class="data-bar"><span style="--w: 45%"></span></div>
+						</div>
+
+						<div class="data-item">
+							<div class="label-group">
+								<span><strong>VRAM (GDDR6X)</strong></span>
+								<span class="muted">Standard Speed / Massive Size</span>
+							</div>
+							<div class="data-bar"><span style="--w: 95%"></span></div>
+						</div>
+					</div>
+				</div>
+			</div>
         </section>
     </main>
 
