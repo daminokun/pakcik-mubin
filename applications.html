@@ -83,6 +83,24 @@
                         computation time and enabling richer visual experiences.
                     </p>
                 </div>
+				<button onclick="showVideo()">Play Video</button>
+
+<div id="videoContainer" style="display:none; margin-top:20px;">
+  <iframe 
+    width="560" 
+    height="315"
+    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+    title="YouTube video"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<script>
+function showVideo() {
+  document.getElementById("videoContainer").style.display = "block";
+}
+</script>
             </div>
         </section>
     </main>
