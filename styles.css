@@ -24,7 +24,7 @@
 body {
   font-family: "Inter", sans-serif;
     /*tukar font body */
-  font-size: 30px;  
+  font-size: 18px;  
   color: var(--text);
   background: radial-gradient(circle at top right, #1a2a47 0%, var(--bg) 45%);*/
   /* --- kalau pn suruh tukar background jd gambar --- * /
