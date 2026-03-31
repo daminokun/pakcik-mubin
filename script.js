@@ -35,7 +35,7 @@ function setupMobileMenu() {
         nav.classList.toggle("open");
     });
 
-    // Close menu after selecting any link on mobile.
+    // tutup menu lepas tekan dlm mobile view.
     nav.querySelectorAll("a").forEach((anchor) => {
         anchor.addEventListener("click", () => {
             nav.classList.remove("open");
@@ -53,7 +53,7 @@ function setFooterYear() {
 }
 
 /**
- * Small reveal animation for cards when entering viewport.
+ * element muncul bila skrol ke bawah
  */
 function setupRevealAnimation() {
     const items = document.querySelectorAll(".reveal");
@@ -81,7 +81,7 @@ function setupRevealAnimation() {
 
 /**
  * Handle contact form submission for static hosting.
- * Prevents 405 errors by avoiding direct POST requests.
+ * elakkan error 405 bila POST requests.
  */
 function setupContactForm() {
     const form = document.getElementById("contactForm");
