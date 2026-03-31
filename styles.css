@@ -24,12 +24,18 @@
 body {
   font-family: "Inter", sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at top right, #1a2a47 0%, var(--bg) 45%);
+  background: radial-gradient(circle at top right, #1a2a47 0%, var(--bg) 45%);*/
+  /* --- kalau pn suruh tukar background jd gambar --- * /
+  background-image: url('background.png'); / * Pastikan file gambar ada dalam folder yang sama * 
+  background-size: cover;      / * Supaya gambar penuh satu screen * /
+  background-attachment: fixed; / * Supaya bila scroll, gambar tak ikut gerak (nampak pro) * /
+  background-position: center; / * Gambar sentiasa kat tengah */
+  
   line-height: 1.6;
   position: relative;
 }
 
-/* Subtle grid overlay for a technical look */
+/* grid dekat background */
 body::before {
   content: "";
   position: fixed;
